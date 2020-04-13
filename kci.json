@@ -1,0 +1,20 @@
+{
+  "stages": [
+    {
+      "name": "build",
+      "jobs": [
+        {
+          "type": "GRADLE_BUILD_DOCKER_IMAGE"
+        }
+      ]
+    },
+    {
+      "name": "deploy",
+      "jobs": [
+        {
+          "type": "DEPLOY_DOCKER_IMAGE"
+        }
+      ]
+    }
+  ]
+}
